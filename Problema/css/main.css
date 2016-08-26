@@ -22,10 +22,7 @@
 .logosmall{
   width: 60%;
 }
-button{
-  border:none
-  padding:10%;
-}
+
 /*HEADER*/
 .h1margen2{
   margin-bottom: 3%;
@@ -70,4 +67,7 @@ padding: 13%;
 /*FOOTER*/
 #fondoazulfoo{
   background-color: #1c4abe;
+}
+#fondogris{
+  background-color: #655c5f;
 }
