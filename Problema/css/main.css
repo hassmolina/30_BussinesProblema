@@ -22,10 +22,17 @@
 .logosmall{
   width: 60%;
 }
+.margen3top{
+  margin-top: 3%;
+}
 
 /*HEADER*/
 .h1margen2{
   margin-bottom: 3%;
+}
+.fontmenu{
+  font-family: 'Days One', sans-serif;
+  font-size: 110%;
 }
 #fondoheader{
   background-image: url("../image/large.jpg");
@@ -70,4 +77,9 @@ padding: 13%;
 }
 #fondogris{
   background-color: #655c5f;
+}
+.iconfooter{
+  font-size: 200%;
+  color: blue;
+  padding: 3%;
 }
