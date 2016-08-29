@@ -25,7 +25,9 @@
 .margen3top{
   margin-top: 3%;
 }
-
+.separador{
+  margin-top: -6%;
+}
 /*HEADER*/
 .h1margen2{
   margin-bottom: 3%;
@@ -51,10 +53,8 @@
   box-shadow: 10px 10px 5px #888888;
   padding: 5%;
 }
-.separador{
-  margin-top: -6%;
-}
-/**/
+
+/*SECCION TEXTO-IMG*/
 .imglapsec2{
   width: 130%;
   height: 600px;
@@ -71,6 +71,47 @@ padding: 13%;
 .bannerimg{
   width: 100%;
 }
+/*EFECTO HOVER IMG LAP OPACIDAD*/
+a.opacity img {
+filter:alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.5;
+-khtml-opacity: 0.5;
+}
+
+a.opacity:hover img {
+filter:alpha(opacity=100);
+-moz-opacity: 1.0;
+opacity: 1.0;
+-khtml-opacity: 1.0;
+}
+/*EFECTO HOVER COLOR IMG BANER*/
+a.set2{
+    display:inline-block;
+    -webkit-transition:  box-shadow 0.2s ease-out;
+    -moz-transition: box-shadow 0.2s ease-out;
+    -ms-transition: box-shadow 0.2s ease-out;
+    -o-transition: box-shadow 0.2s ease-out;
+     transition: box-shadow 0.2s ease-out;
+}
+
+a.set2:hover {
+  box-shadow: inset 0 0 90px -20px #373737;
+}
+
+a.set2 img{
+    position: relative;z-index: -1;vertical-align:bottom;
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+
+a.set2:hover img {
+    -webkit-filter:grayscale(1);
+}
+
 /*FOOTER*/
 #fondoazulfoo{
   background-color: #1c4abe;
