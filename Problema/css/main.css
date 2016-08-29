@@ -10,7 +10,6 @@
 #fondoazul {
     background-color: #2362ad;
     margin: 0 !important;
-    opacity: .5 !important;
     padding: 3%;
 }
 .margen15top {
@@ -31,6 +30,9 @@
 
 /*HEADER*/
 
+.backgroundmodal{
+  background-image: url("../image/large.jpg");
+}
 .navbar .navbar-nav>li>a {
     color: white;
 }
@@ -50,10 +52,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-}
-.pantalla {
-    background-color: rgba(98, 91, 96, 0.5);
-    height: 500px;
+    opacity:;
 }
 
 /*SERVICIOS*/
@@ -126,7 +125,11 @@ a.set2:hover img {
 }
 
 /*FOOTER*/
-
+#mymodal{
+  background-image: url("../image/large.jpg");
+  width: 100%;
+  background-position: cover;
+}
 #fondoazulfoo {
     background-color: #1c4abe;
 }

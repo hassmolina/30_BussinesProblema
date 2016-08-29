@@ -21,50 +21,89 @@
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src=""></script>
     <![endif]-->
 </head>
 
 <body>
 	<div class="container-fluid">
 		<header id="fondoheader">
-			<div class="pantalla">
-				<nav class="navbar">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand fontmenu" href="#"><strong>USER TESTING 360</strong></a>
-						</div>
-						<div class="collapse navbar-collapse" id="myNavbar">
-							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#menu1" class=" fontmenu ">¿Qué me ofrece?</a></li>
-								<li><a href="#menu2" class="  fontmenu">¿Cómo funciona?</a></li>
-								<li><a href="#menuuso" class="fontmenu ">¿Por qué usarlo?</a></li>
-								<li><a href="#menucontacto" class=" fontmenu">Contáctanos</a></li>
-							</ul>
-						</div>
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand fontmenu" href="#"><strong>USER TESTING 360</strong></a>
 					</div>
-				</nav>
-				<div class="row">
-					<!--TITULO PRINCIPAL-->
-					<div class="col-md-12 text-center text-white margen5top h1margen2">
-						<h1 class="animated rubberBand">Obtén videos de personas reales<br> utilizando tu sitio web, en 1 Hora</h1>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#menu1" class=" fontmenu ">¿Qué me ofrece?</a></li>
+							<li><a href="#menu2" class="  fontmenu">¿Cómo funciona?</a></li>
+							<li><a href="#menuuso" class="fontmenu ">¿Por qué usarlo?</a></li>
+							<li><a href="#menucontacto" class=" fontmenu">Contáctanos</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="row" id="fondoazul">
-					<!--PRUEBA-->
-					<div class="col-md-6 col-xs-12 text-right text-white img-responsive">
-						<h4>PRUEBA GRATUITA</h4>
-						<p>Obten un video gratis de 5 minutos</p>
-					</div>
-					<div class="col-md-6 col-xs-12 text-white img-responsive">
-						<button type="button" class="margen2top btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal">
-							Pruebalo Gratis
-						</button>
+			</nav>
+			<div class="row">
+				<!--TITULO PRINCIPAL-->
+				<div class="col-md-12 text-center text-white margen5top h1margen2">
+					<h1 class="animated rubberBand">Obtén videos de personas reales<br> utilizando tu
+						 sitio web, en 1 Hora</h1>
+				</div>
+			</div>
+			<div class="row" id="">
+				<!--PRUEBA-->
+				<div class="col-md-6 col-xs-12 text-right text-white img-responsive">
+					<h4>PRUEBA GRATUITA</h4>
+					<p>Obten un video gratis de 5 minutos</p>
+				</div>
+				<div class="col-md-6 col-xs-12 text-white">
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Prueba gratis</button>
+					<!-- Modal -->
+					<div class="modal fade backgroundmodal" id="myModal" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<!--MODAL TITULO-->
+									<h2>Formulario User Testing 360</h2>
+								</div>
+								<div class="modal-body">
+									<!--MODAL FORMULARIO-->
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label class="control-label col-sm-2">Nombre: *</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre">
+											</div>
+											<label class="control-label col-sm-2">E-mail: *</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<label class="control-label col-sm-2">Tú URL: *</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="email" placeholder="Enter URL">
+											</div>
+											<button type="submit" name="button" class="btn btn-default">Enviar email</button>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<!--MODAL FOOTER-->
+									<div class="row">
+										<div class="col-md-6 ">
+											<p>Powered by Laboratoria</p>
+										</div>
+										<div class="col-md-6">
+											<p>Report abuse</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -202,63 +241,19 @@
 					<h2>PRUEBA GRATUITA</h2>
 					<p>Obten un video de 5 minutos gratis</p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 margen2top">
 					<!--BOTON MODAL-->
-					<button type="button" class="margen2top btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal">
-						Pruebalo Gratis
-					</button>
-					<div class="modal fade" id="mymodal">
-						<!--MODAL FORMULARIO-->
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<!--MODAL TITULO-->
-									<h2>Formulario User Testing 360</h2>
-								</div>
-								<div class="modal-body">
-									<!--MODAL FORMULARIO-->
-									<form class="form-horizontal">
-										<div class="form-group">
-											<label class="control-label col-sm-2">Nombre: *</label>
-											<div class="col-sm-10">
-												<input type="email" class="form-control" id="email" placeholder="Ingresa tu nombre">
-											</div>
-											<label class="control-label col-sm-2">E-mail: *</label>
-											<div class="col-sm-10">
-												<input type="email" class="form-control" id="email" placeholder="Enter email">
-											</div>
-											<label class="control-label col-sm-2">Tú URL: *</label>
-											<div class="col-sm-10">
-												<input type="email" class="form-control" id="email" placeholder="Enter email">
-											</div>
-											<button type="submit" name="button" class="btn btn-default">Enviar email</button>
-										</div>
-									</form>
-								</div>
-								<div class="modal-footer">
-									<!--MODAL FOOTER-->
-									<div class="row">
-										<div class="col-md-6 ">
-											<p>Powered by Laboratoria</p>
-										</div>
-										<div class="col-md-6">
-											<p>Report abuse</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 				</div>
 			</div>
 			<div class="row" id="fondogris">
 				<!--SEGUNDA PARTE FOOTER-->
 				<div class="col-md-6" id="menucontacto">
-					<p>Escribenos a:</o>
-						<a href="mailto:experienciadeusuario.la@gmail.com">
-							<p><span class="text-blue">experienciadeusuario.la@gmail.com</span></p>
-						</a>
-						<p>telef: 989637925</p>
+					<p>Escribenos a:</p>
+					<a href="mailto:experienciadeusuario.la@gmail.com">
+						<p><span class="text-blue">experienciadeusuario.la@gmail.com</span></p>
+					</a>
+					<p>telef: 989637925</p>
 				</div>
 				<div class="col-md-6 text-right text-white margen2top">
 					<a href="http://facebook.com"><span class="icon-facebook img-circle iconfooter"></span></a>
